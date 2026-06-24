@@ -7,3 +7,7 @@ promp: crea el archivo RecetasCard.jsx en src/components, recibe los props de re
 cambios: componente `RecetasCard` creado con estilos inline, importado y usado en `App.jsx` para renderizar cada receta
 
 Etapa 3
+promp: crea ListaRecetas.jsx en components y haz que reciba el array de recetas por props, luego recorre el array con .map() y renderiza un RecetasCard por cada receta. Asigna correctamente la propkey usando el id de cada elemento asegurate de un usar el indice del array, renderiza ListaRecetas pasando los datos importantes en App.jsx y agrega la informacion de los cambios a ia.txt EN EL BLOQUE DE LA ETAPA 3
+cambios: componente `ListaRecetas` creado en `src/components/ListaRecetas.jsx`, recibe `recetas` por props y renderiza un `RecetasCard` por elemento usando `receta.id` como `key`; `App.jsx` actualizado para importar y usar `ListaRecetas` con el array `recetas`.
+
+Etapa 4
