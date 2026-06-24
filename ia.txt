@@ -1,0 +1,9 @@
+etapa 1
+promp: importa recetas.js a app.jsx y crea una conección con console.log
+muy util
+
+etapa 2
+promp: crea el archivo RecetasCard.jsx en src/components, recibe los props de recetas.js y muestra la información con estilos diferenciados para fondo, entrada y postre
+cambios: componente `RecetasCard` creado con estilos inline, importado y usado en `App.jsx` para renderizar cada receta
+
+Etapa 3
