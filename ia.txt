@@ -11,3 +11,6 @@ promp: crea ListaRecetas.jsx en components y haz que reciba el array de recetas 
 cambios: componente `ListaRecetas` creado en `src/components/ListaRecetas.jsx`, recibe `recetas` por props y renderiza un `RecetasCard` por elemento usando `receta.id` como `key`; `App.jsx` actualizado para importar y usar `ListaRecetas` con el array `recetas`.
 
 Etapa 4
+promp: crea FiltroCategoria.jsx en components con botones o un selector para filtrar los las categorias existentes. utiliza el usestate para guardar el filtro seleccionado y un campo de busqueda por nombre en app.jsx, aplica ambos filtros sobre el array antes de pasarlo a ListaRecetas. utiliza el renderizado condicional para mostrar el mensaje "No hay recetas que coincidan" cuando el resultado de la busqueda quede vacio y agrega los cambios a ia.txt en el bloque de la etapa 4
+cambios: componente `FiltroCategoria` creado en `src/components/FiltroCategoria.jsx`; `App.jsx` actualizado con estado `categoriaSeleccionada` y `terminoBusqueda`, filtros aplicados antes de pasar `recetasFiltradas` a `ListaRecetas`, y renderizado condicional para mostrar "No hay recetas que coincidan" cuando no hay resultados.
+
