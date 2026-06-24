@@ -14,3 +14,7 @@ Etapa 4
 promp: crea FiltroCategoria.jsx en components con botones o un selector para filtrar los las categorias existentes. utiliza el usestate para guardar el filtro seleccionado y un campo de busqueda por nombre en app.jsx, aplica ambos filtros sobre el array antes de pasarlo a ListaRecetas. utiliza el renderizado condicional para mostrar el mensaje "No hay recetas que coincidan" cuando el resultado de la busqueda quede vacio y agrega los cambios a ia.txt en el bloque de la etapa 4
 cambios: componente `FiltroCategoria` creado en `src/components/FiltroCategoria.jsx`; `App.jsx` actualizado con estado `categoriaSeleccionada` y `terminoBusqueda`, filtros aplicados antes de pasar `recetasFiltradas` a `ListaRecetas`, y renderizado condicional para mostrar "No hay recetas que coincidan" cuando no hay resultados.
 
+Etapa 5
+promp: resalta visualmente los distintos elementos con esVegetariana: true agregando una etiqueta que diga "VEG", agrega un contador para las recetas vegetarianas y agrega los cambios a ia.txt creando el bloque de etapa 5
+cambios: `RecetasCard.jsx` actualizado para mostrar una etiqueta `VEG` en recetas vegetarianas; `App.jsx` añadido contador `totalVegetarianas` basado en `recetasFiltradas` y mostrado sobre la lista de recetas.
+

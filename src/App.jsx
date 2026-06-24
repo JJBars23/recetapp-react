@@ -27,6 +27,10 @@ function App() {
     })
   }, [categoriaSeleccionada, terminoBusqueda])
 
+  const totalVegetarianas = useMemo(() => {
+    return recetasFiltradas.filter(receta => receta.esVegetariana).length
+  }, [recetasFiltradas])
+
   return (
     <div className="App">
       <h1>Recetas</h1>
@@ -52,6 +56,10 @@ function App() {
             fontSize: '1rem'
           }}
         />
+      </div>
+
+      <div style={{ marginBottom: '20px', color: '#334155' }}>
+        <strong>Recetas vegetarianas encontradas:</strong> {totalVegetarianas}
       </div>
 
       {recetasFiltradas.length > 0 ? (

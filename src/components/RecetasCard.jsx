@@ -17,8 +17,26 @@ function RecetasCard({ receta }) {
       color: style.color,
       marginBottom: '16px',
       boxShadow: '0 8px 20px rgba(15, 23, 42, 0.08)',
-      maxWidth: '520px'
+      maxWidth: '520px',
+      position: 'relative'
     }}>
+      {receta.esVegetariana && (
+        <span style={{
+          position: 'absolute',
+          top: '18px',
+          right: '18px',
+          padding: '6px 10px',
+          borderRadius: '999px',
+          backgroundColor: '#22c55e',
+          color: '#ffffff',
+          fontWeight: 700,
+          fontSize: '0.75rem',
+          letterSpacing: '0.05em'
+        }}>
+          VEG
+        </span>
+      )}
+
       <header style={{ marginBottom: '12px' }}>
         <h2 style={{ margin: 0, fontSize: '1.35rem' }}>{receta.nombre}</h2>
         <span style={{
